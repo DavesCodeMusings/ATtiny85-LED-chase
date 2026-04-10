@@ -1,4 +1,4 @@
-# ATtiny85-LED-chase
+# ATtiny85 LED Chase
 This repository holds the code (and in the future, schematics and CAD files) for an ATtiny85-based
 3-LED chase sequence.
 
@@ -11,10 +11,10 @@ The ATtiny line also has a variant that runs on power as low as 1.8V, making a s
 coin cell, or pair of AA batteries feasible.
 
 ## For the love of God, man, why?
-Are there off the shelf bicycle turn indicators available? Yes. Do any of them flash a chase sequence
+Are there off-the-shelf bicycle turn indicators available? Yes. Do any of them flash a chase sequence
 to indicate direction? Not that I've seen. When I'm riding at night, do I want to trust my safety to a
 dinky little indicator that, even though it's shaped like a directional arrow, may not be easy to discern
-for a vehicle behind me? No, I don not.
+for a vehicle behind me? No, I do not.
 
 Plus, have you ever seen the turn indicators on a Ford Mustang? The three light chase is undeniably cool.
 
