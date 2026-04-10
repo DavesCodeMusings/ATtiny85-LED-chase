@@ -21,13 +21,13 @@ void setup() {
   pinMode(LED0, OUTPUT);
   pinMode(LED1, OUTPUT);
   pinMode(LED2, OUTPUT);
-  pinMode(3, INPUT_PULLUP);  // up/down control, physical pin 2, defaults to upward count
+  pinMode(DIRECTION, INPUT_PULLUP);  // up/down control, physical pin 2, defaults to upward count
 }
 
 // Use direct port manipulation to ensure all LED changes happen at the same time.
 // This allows a single current limiting resistor common to all three LEDs.
 void loop() {
-  if (digitalRead(3) == HIGH) {  // counts upward 0, 1, 2, blank
+  if (digitalRead(DIRECTION) == HIGH) {  // counts upward 0, 1, 2, blank
     PORTB = PORTB & 0b11111000;  // Turn off 0, 1, 2
     PORTB = PORTB | 0b00000001;  // Turn on only 0
     delay(DELAY_mS);
