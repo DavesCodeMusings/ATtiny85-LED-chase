@@ -19,8 +19,8 @@ for a vehicle behind me? No, I do not.
 Plus, have you ever seen the turn indicators on a Ford Mustang? The three light chase is undeniably cool.
 
 ## Preparing the ATtiny85 and the Arduino IDE
-The ATtiny cannot be programmed directly. You must set up an off-the-shelf Arduino as a system programmer.
-_DigiKey_ has a good tutorial on this.
+The ATtiny cannot be programmed directly from USB with the Arduino IDE. You must set up an off-the-shelf
+Arduino as a system programmer. _DigiKey_ has a good tutorial on this.
 
 https://www.digikey.com/en/maker/tutorials/2022/how-to-flash-the-arduino-bootloader-to-an-attiny85-ic
 
