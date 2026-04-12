@@ -52,29 +52,29 @@ void setup() {
 // This allows a single current limiting resistor common to all three LEDs.
 void loop() {
   if (digitalRead(DIRECTION) == HIGH) {  // counts upward 0, 1, 2, blank
-    PORTB = PORTB & 0b11111000;  // Turn off 0, 1, 2
-    PORTB = PORTB | 0b00000001;  // Turn on only 0
+    PORTB = PORTB & 0b11111000;  // Turn off LEDs 0, 1, 2
+    PORTB = PORTB | bit(LED0);   // Turn on only LED 0
     wdtSleep();
-    PORTB = PORTB & 0b11111000;  // Turn off 0, 1, 2
-    PORTB = PORTB | 0b00000010;  // Turn on only 1
+    PORTB = PORTB & 0b11111000;
+    PORTB = PORTB | bit(LED1);
     wdtSleep();
-    PORTB = PORTB & 0b11111000;  // Turn off 0, 1, 2
-    PORTB = PORTB | 0b00000100;  // Turn on only 2
+    PORTB = PORTB & 0b11111000;
+    PORTB = PORTB | bit(LED2);
     wdtSleep();
-    PORTB = PORTB & 0b11111000;  // Turn off 0, 1, 2
+    PORTB = PORTB & 0b11111000;  // Everything off
     wdtSleep();
   }
   else {  // counts downward 2, 1, 0, blank
-    PORTB = PORTB & 0b11111000;  // Turn off 0, 1, 2
-    PORTB = PORTB | 0b00000100;  // Turn on only 2
+    PORTB = PORTB & 0b11111000;  // Turn off LEDs 0, 1, 2
+    PORTB = PORTB | bit(LED2);   // Turn on only LED 2
     wdtSleep();
-    PORTB = PORTB & 0b11111000;  // Turn off 0, 1, 2
-    PORTB = PORTB | 0b00000010;  // Turn on only 1
+    PORTB = PORTB & 0b11111000;
+    PORTB = PORTB | bit(LED1);
     wdtSleep();
-    PORTB = PORTB & 0b11111000;  // Turn off 0, 1, 2
-    PORTB = PORTB | 0b00000001;  // Turn on only 0
+    PORTB = PORTB & 0b11111000;
+    PORTB = PORTB | bit(LED0);
     wdtSleep();
-    PORTB = PORTB & 0b11111000;  // Turn off 0, 1, 2
+    PORTB = PORTB & 0b11111000;  // Everything off
     wdtSleep();
   }
 }
