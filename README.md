@@ -7,8 +7,8 @@ The design must be able to run from batteries. Low part count is a desirable, bu
 
 ATtiny85 was chosen because of its popularity as an alternative to the ubiquitous Arduino Uno.
 Theoretically, this should also run on a cheaper ATtiny25 (with 2K flash) since the code is minimal.
-The ATtiny line also has a variant that runs on power as low as 1.8V, making a single Lithium-ion, CR2032
-coin cell, or pair of AA batteries feasible.
+At low clock speeds, the ATtiny can run off voltages as low as 2.8V and up to 5.5V, making a single
+lithium-ion cell a viable power source for the project.
 
 ## For the love of God, man, why?
 Are there off-the-shelf bicycle turn indicators available? Yes. Do any of them blink with a chase sequence
