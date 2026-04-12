@@ -30,6 +30,10 @@ David is one of the original Arduino developers. (I learned this from the intern
 
 https://www.instructables.com/How-to-Program-and-Bootload-ATtiny85-With-USBasp/
 
+For those who prefer video instructions, this one is excellent:
+
+https://www.youtube.com/watch?v=sycSdI49hlY
+
 ## About the sketch (code)
 The three GPIOs for lighting the LEDs are PB0, PB1, and PB2. These are physical pins 5, 6, and 7 on an
 ATtiny85 8-pin DIP (all on the same side.) The input to control up/down direction is PB3 (physical pin 2,
