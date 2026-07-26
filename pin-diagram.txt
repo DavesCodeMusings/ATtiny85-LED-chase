@@ -1,0 +1,6 @@
+Connections for a 3 LED chase sequence
+
+RESET -|1   8|- VCC
+UP/DN -|2   7|- LED_2
+   NC -|3   6|- LED_1
+  GND -|4   5|- LED_0  
